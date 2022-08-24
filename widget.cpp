@@ -92,13 +92,16 @@ void Widget::on_pbMilk_clicked()
 
 void Widget::on_pbReset_clicked()
 {
-    QMessageBox msg1;
-    QMessageBox msg2;
-    msg1.information(nullptr,"money","!!reset!!");
-    msg2.information(nullptr,"money","!!reset!!");
-    money = 0;
-    ui->lcdNumber->display(money);
-    ui->pbCoffee->setEnabled(false);
-    ui->pbMango->setEnabled(false);
-    ui->pbMilk->setEnabled(false);
+    QMessageBox msgBox;
+    QString message;
+
+    ch500 = (money / 100) / 5;
+    ch100 = (money / 100) % 5;
+    ch50 = (money % 100) / 50;
+    ch10 = ((money % 100) % 50)/10;
+
+    message = QString(" 500 : %1 \n 100 : %2\n 50 : %3\n 10 : %4").arg(ch500).arg(ch100).arg(ch50).arg(ch10);
+
+    msgBox.information(this, "!!change!!", message);
+    changeMoney(money=0);
 }
