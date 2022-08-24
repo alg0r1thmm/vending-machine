@@ -4,4 +4,5 @@ Best of the Best 11th Task[vending-machine]
 
 # Example
 
-<img width="769" alt="example" src="https://user-images.githubusercontent.com/33516922/186329131-c6203e24-aece-4be7-8ac2-593e103fca25.png">
+<img width="766" alt="image" src="https://user-images.githubusercontent.com/33516922/186347732-e438ef5c-5753-4148-bc82-cdb6ab2dba52.png">
+
