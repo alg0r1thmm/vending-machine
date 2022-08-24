@@ -16,6 +16,10 @@ public:
     ~Widget();
 
     int money = 0;
+    int ch500 = 0;
+    int ch100 = 0;
+    int ch50 = 0;
+    int ch10 = 0;
 
     void changeMoney(int diff);
 
